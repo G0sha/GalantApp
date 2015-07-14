@@ -1,0 +1,253 @@
+/*@import "bootstrap";*/
+
+* {
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* links */
+a {
+  color: #f26c4f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9a9898;
+}
+
+.links-white-orange{
+  color: #ebebeb;
+}
+
+.links-white-orange:hover {
+  color: #f26c4f;
+}
+/* end links */
+
+body {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #ebebeb;
+  min-width: 1042px;
+  background-color: #ebebeb;
+}
+
+/* Top line */
+
+#top {
+  min-width: 1024px;
+  height: 80px;
+  background-color: #373737;
+}
+
+#logo-square {
+  width: 80px;
+  background: url(/img/logo.png) no-repeat center #f26c4f; /* оранжевый */
+}
+
+#logo-pointer {
+  width: 22px;
+  margin-right: 20px;
+  background: url(/img/logo-pointer.png) no-repeat left;
+}
+
+#logo-name {
+  width: 130px;
+  background: url(/img/logo-name.png) no-repeat left;
+}
+
+#phone {
+  font-size: 22px;
+  width: 180px;
+  height: 24px;
+  color: #f26c4f;
+  margin-left: 545px;
+  margin-top: 27px;
+  padding-left: 40px;
+  padding-top: 4px;
+  background: url(/img/ico/phone.png) no-repeat left;
+  float: left;
+
+}
+
+.top-logo {
+  height: 80px;
+  float: left;
+}
+
+/* End Top line */
+
+/* Menu line */
+
+
+nav {
+  display: block;
+  height: 65px;
+  background-color: #474747;
+}
+
+nav ul {
+  width: 814px;
+  height: 65px;
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: none;
+  background: url(/img/ico/cart.png) no-repeat left;
+  float: left;
+}
+
+nav ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 40px;
+  float: left;
+}
+
+#location {
+  width: 140px;
+  height: 36px;
+  margin-top: 11px;
+  padding-left: 30px;
+  background: url(/img/ico/point.png) no-repeat left;
+  float: left;
+}
+
+/* End Menu line */
+
+/* Slider */
+
+#slider {}
+
+#slider-page {
+  width: 664px;
+  height: 425px;
+  float: left;
+}
+
+#slider-line {
+  width: 20px;
+  height: 425px;
+  background-color: #f26c4f;
+  float: left;
+}
+
+#slider-menu {
+  width: 340px;
+  height: 425px;
+  background-color: #373737;
+  float: left;
+}
+
+#slider-menu ul {
+  padding: 40px 0;
+  list-style-type: none;
+}
+
+#slider-menu ul li {
+  cursor: pointer;
+  font-size: 27px;
+  padding: 10px 10px 10px 20px;
+}
+
+#slider-menu ul li:hover {
+  color: #9a9898;
+}
+
+/* End Slider */
+
+/* Sidebar */
+
+.sidebar {
+  width: 304px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.sidebar menu {
+  padding: 15px 15px 15px 25px;
+  list-style-position: inside;
+  background: url(/img/menu-line.jpg) repeat-y left #373737;
+
+}
+
+.sidebar menu menu {
+  color: #373737;
+  margin: 5px -15px;
+  background: url(/img/menu-pointer.png) no-repeat top left #ebebeb;
+
+}
+
+menu li {
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+menu li:hover {
+  color: #9a9898;
+}
+
+menu a{
+  color: #373737;
+}
+
+/* End sidebar */
+
+/* Content */
+
+.content {
+  color: #373737;
+  width: 720px;
+  float: left;
+}
+
+.block-content {
+  width: 331px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.image-content {
+  height: 210px;
+  overflow: hidden;
+}
+
+.contents {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.contents p {
+  text-align: right;
+}
+
+/* End content */
+
+footer {
+  font-size: 15px;
+  color: #9a9898;
+  min-width: 1024px;
+  height: 80px;
+  padding:  20px 0px;
+  background-color: #373737;
+}
+
+footer .content {
+  color: #9a9898;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.space {
+  height: 20px;
+  clear: both;
+}
+
+.clear {
+  clear: both; /* Отмена обтекания */
+}

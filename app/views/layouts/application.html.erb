@@ -6,10 +6,46 @@
                               'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
+  <%= render 'layouts/header' %>
 
-<%= yield %>
+    <div class="space"></div>
+    <!-- Slider -->
+    <div id="slider">
+      <div id="slider-page"></div>
+      <div id="slider-line"></div>
+      <div id="slider-menu">
+        <ul>
+          <li id="slider-menu-1" onclick="slider(1);">Текст сообщения под номером 1</li>
+          <li id="slider-menu-2" onclick="slider(2);">Текст сообщения под номером 2</li>
+          <li id="slider-menu-3" onclick="slider(3);">Текст сообщения под номером 3</li>
+          <li id="slider-menu-4" onclick="slider(4);">Текст сообщения под номером 4</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Slider -->
+
+    <div class="space"></div>
+
+    <%= render 'layouts/sidebar' %>
+
+    <div class="content">
+      <a name="top"></a>
+      <%= yield %>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+  <!-- End Body Container  -->
+
+  <%= render 'layouts/footer' %>
 
 </body>
+<script type="text/javascript">
+  slider(1);
+  menu(0);
+</script>
 </html>
