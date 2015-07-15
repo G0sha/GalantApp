@@ -13,12 +13,17 @@
     <!-- Menu -->
     <nav>
       <ul>
-        <li><%= link_to "Главная", "#", class: 'links-white-orange', title: 'Главная' %></li>
-        <li><%= link_to "Каталог", "#", class: 'links-white-orange', title: 'Каталог' %></li>
-        <li><a href="#" title="Услуги" class="links-white-orange">Услуги</a></li>
-        <li><a href="#" title="Контакты" class="links-white-orange">Контакты</a></li>
-        <li><a href="#" title="О нас" class="links-white-orange">О нас</a></li>
-         <li><%= link_to "Sign up", '#', class: "btn btn-large btn-primary" %></li>
+        <li><%= link_to "Главная",  root_path,      class: 'links-white-orange',
+                 title: 'Главная' %></li>
+        <li><%= link_to "Каталог",  price_path,     class: 'links-white-orange',
+                 title: 'Каталог' %></li>
+        <li><%= link_to "Услуги",   services_path , class: 'links-white-orange',
+                 title: 'Услуги' %></li>
+        <li><%= link_to "Контакты", contact_path ,  class: 'links-white-orange',
+                 title: 'Контакты' %></li>
+        <li><%= link_to "О нас",    about_path ,    class: 'links-white-orange',
+                 title: 'О нас' %></li>
+        <li><%= link_to "Регистрация", signup_path, class: 'btn btn-large btn-primary' %></li>
       </ul>
       <div id="location">Москва<br>Московская обл.</div>
     </nav>
