@@ -23,21 +23,21 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img alt="First slide" src="img/slider/slider-1.jpg">
+          <img alt="First slide" src="<%= root_path%>img/slider/slider-1.jpg">
           <div class="carousel-caption">
             <h3>Заголовок 1</h3>
             <p>Текст 1 Текст 1 Текст 1</p>
           </div>
         </div>
         <div class="item">
-          <img alt="First slide" src="img/slider/slider-2.jpg">
+          <img alt="First slide" src="<%= root_path%>img/slider/slider-2.jpg">
           <div class="carousel-caption">
             <h3>Заголовок 2</h3>
             <p>Текст 2 Текст 2 Текст 2</p>
           </div>
         </div>
         <div class="item">
-          <img alt="First slide" src="img/slider/slider-3.jpg">
+          <img alt="First slide" src="<%= root_path%>img/slider/slider-3.jpg">
           <div class="carousel-caption">
             <h3>Заголовок 3</h3>
             <p>Текст 3 Текст 3 Текст 3</p>
@@ -59,6 +59,9 @@
       <div class="row content">
         <%= render 'layouts/sidebar' %>
         <div class="col-md-8">
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
           <%= yield %>
         </div>
       </div>
