@@ -7,7 +7,7 @@
 <% end %>
 
 <% @products.each do |product| %>
-<div class="row thumbnail">
+<div class="row thumbnail margin-clear">
   <div class="col-md-4"><%= image_tag(product.image_url) %></div>
   <div class="col-md-8 caption">
     <h2><%= product.title %> <span class="badge"><%= product.price %> р.</span></h2>
