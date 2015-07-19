@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :prices,   only: [:create, :destroy]
   root 'static_pages#home'
   match '/price',    to: 'static_pages#price',    via: 'get'
   match '/services', to: 'static_pages#services', via: 'get'

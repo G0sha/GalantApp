@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @price = current_user.prices.build if signed_in?
   end
 
   def price
