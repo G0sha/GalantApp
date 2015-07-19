@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :group %><br>
-    <%= f.text_field :group %>
+    <%= f.select(:group, options_for_select(update_group)) %>
   </div>
   <div class="field">
-    <%= f.label :subroup %><br>
-    <%= f.text_field :subgroup %>
+    <%= f.label :subgroup %><br>
+    <%= f.select(:subgroup, options_for_select(update_subgroup)) %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
