@@ -16,4 +16,13 @@ namespace :db do
                    password_confirmation: password)
     end
   end
+
+  desc "Create admin user"
+  task createadmin: :environment do
+    User.create!(name: "admin",
+                 email: "admin@admin.ru",
+                 password: "admin1234",
+                 password_confirmation: "admin1234",
+                 admin: true)
+  end
 end

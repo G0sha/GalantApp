@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :products
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   root 'static_pages#home'
-  match '/price',    to: 'static_pages#price',    via: 'get'
   match '/services', to: 'static_pages#services', via: 'get'
   match '/contact',  to: 'static_pages#contact',  via: 'get'
   match '/about',    to: 'static_pages#about',    via: 'get'
