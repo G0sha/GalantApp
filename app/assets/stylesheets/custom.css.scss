@@ -22,6 +22,10 @@ body {
   padding-top: 80px;
 }
 
+#product_subgroup, #product_group{
+  @extend .form-control;
+}
+
 #footer {
   margin-top: 20px;
 }
@@ -47,7 +51,7 @@ body {
   border-color: #474747;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #373737;
 }
 .dropdown-menu {
@@ -198,8 +202,7 @@ input {
 }
 
 .field_with_errors {
-  @extend .form-group;
-  @extend .text-danger;
+  @extend .has-error;
 }
 
 .alert-error {

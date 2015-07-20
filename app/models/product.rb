@@ -6,4 +6,6 @@ class Product < ActiveRecord::Base
     with: %r{\.(gif|jpg|jpeg|png)}i,
     message: "URL должен указывать на изображение формата GIF,JPG, JPEG или PNG."
   }
+  validates :group, presence: true
+  validates :subgroup, presence: true
 end
