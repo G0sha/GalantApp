@@ -194,11 +194,16 @@ input {
 }
 
 #error_explanation {
-  color: #f00;
-  ul {
-    list-style: none;
-    margin: 0 0 18px 0;
-  }
+  @extend .alert;
+  @extend .alert-danger;
+}
+
+#error_explanation h2{
+  @extend h4;
+}
+
+#error_explanation ul{
+  @extend .list-unstyled
 }
 
 .field_with_errors {
@@ -210,7 +215,8 @@ input {
 }
 
 .alert-notice {
-  @extend .alert-danger;
+  @extend .alert;
+  @extend .alert-success;
 }
 
 /* Users index */
