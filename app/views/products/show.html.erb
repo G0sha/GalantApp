@@ -15,7 +15,7 @@
       <%= link_to "Назад", "#", onclick: "history.back()", class: "btn btn-warning" %>
       <% if signed_in? %>
         <%= link_to 'Редактировать', edit_product_path(@product), class: "btn btn-success" %></td>
-        <%= link_to 'Удалить', product_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+        <%= link_to 'Удалить', product_path, method: :delete, data: { confirm: 'Вы уверены?' }, class: "btn btn-danger" %>
         <% end %>
   </div>
 </div>
