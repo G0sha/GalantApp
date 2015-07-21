@@ -28,8 +28,10 @@
     <%= f.text_area :description, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= f.label "Ссылка на изображение", class: "control-label" %><br>
-    <%= f.text_field :image_url, class: "form-control" %>
+    <%= f.label "Изображение", class: "control-label" %><br>
+    <%= image_tag(@product.image.thumb.url) if @product.image? %>
+    <%= f.file_field :image %>
+    <%= f.hidden_field :image_cache %>
   </div>
   <div class="form-group">
     <%= f.label "Цена", class: "control-label" %><br>

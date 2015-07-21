@@ -7,7 +7,7 @@
 <% @products.each do |product| %>
 <% if (params[:gr] == product.group and params[:sgr] == product.subgroup) or (params[:gr] == nil and params[:sgr] == nil) or (params[:gr] == product.group and params[:sgr] == nil) %>
 <div class="row thumbnail margin-clear">
-  <div class="col-xs-4"><%= image_tag(product.image_url, class: "img-responsive") %></div>
+  <div class="col-xs-4"><%= image_tag(product.image.thumb.url, class: "img-responsive") if product.image? %></div>
   <div class="col-xs-8 caption">
     <h2><%= product.title %> <span class="badge"><%= product.price %> руб.</span></h2>
     <p><%= product.description %></p>
