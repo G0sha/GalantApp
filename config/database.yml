@@ -20,6 +20,12 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: app_development
+  pool: 5
+  username: galant
+  password: Oosh9au4
+  host: localhost
+  port: 5432
