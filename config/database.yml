@@ -20,12 +20,12 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-development:
+production:
   adapter: postgresql
   encoding: unicode
-  database: app_development
+  database: galant
   pool: 5
   username: galant
   password: Oosh9au4
-  host: localhost
-  port: 5432
+ # host: localhost
+ # port: 5432
