@@ -25,7 +25,5 @@ production:
   encoding: unicode
   database: galant
   pool: 5
-  username: galant
+  username: deploy
   password: Oosh9au4
- # host: localhost
- # port: 5432
