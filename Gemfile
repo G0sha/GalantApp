@@ -7,8 +7,8 @@ gem 'rails'
 
 group :development do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  gem 'faker'
+# gem 'sqlite3'
+# gem 'faker'
 end
 
 # Use SCSS for stylesheets
@@ -58,8 +58,8 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 end
 
-group :production do
+#group :production do
   gem 'pg'
   gem 'rails_12factor'
   gem 'spring'
-end
+#end
