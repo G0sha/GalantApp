@@ -29,4 +29,10 @@ test:
 #  database: db/test.sqlite3
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: db_galant
+  pool: 5
+  username: deploy
+  password: Oosh9au4
+  host: localhost

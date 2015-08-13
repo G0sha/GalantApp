@@ -6,14 +6,20 @@ ruby '2.2.2'
 gem 'rails'
 
 group :development do
+  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rails', '~> 1.1.1'
+  # Add this if you're using rbenv
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
   # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-# gem 'faker'
+  gem 'sqlite3'
+  gem 'faker'
 end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
+
 
 # Image uploader
 gem 'carrierwave'
@@ -41,10 +47,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
+# gem 'capistrano-rails', group: :development
 
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
@@ -58,8 +64,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 end
 
-#group :production do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'spring'
-#end
+end
